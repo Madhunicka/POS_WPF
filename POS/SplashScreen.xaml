@@ -1,0 +1,34 @@
+﻿<Window x:Class="POS.SplashScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POS"
+        mc:Ignorable="d"
+        Title="SplashScreen" Height="280" Width="600" 
+        WindowStyle="None" AllowsTransparency="True" 
+        Background="Transparent" Topmost="True" WindowStartupLocation="CenterScreen" >
+    <Grid>
+
+       
+
+
+        <Border CornerRadius="20" BorderBrush="Transparent" Background="#FFC1D1E9" >
+
+
+
+
+        </Border>
+        <StackPanel>
+            <Image HorizontalAlignment="Right" Width="310" Source="/Images/spec-1.png" Height="274"/>
+            <TextBlock Margin="40 -240 -50 80"  Text="Welcome " FontWeight="Bold" FontSize="23" Height="55" />
+        </StackPanel>
+        <TextBlock Foreground="Black" Margin="40,140,0,0" FontSize="15" FontWeight="SemiBold" HorizontalAlignment="Left" Text="Loading Resources.."></TextBlock>
+
+
+        <ProgressBar x:Name="progressBar" Value="50" Minimum="0" Maximum="100" Width="190" Height="5" IsIndeterminate="True" 
+                       Margin="40,172,370,103"  />
+      
+
+    </Grid>
+</Window>
